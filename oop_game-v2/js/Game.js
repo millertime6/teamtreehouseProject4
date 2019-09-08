@@ -30,14 +30,19 @@
     let randomNumber = Math.round(Math.random() * 4); 
     let randomPhrase = this.phrases[randomNumber]; 
     return randomPhrase;
+
     };
 
     startGame() {
         const overlay = $('#overlay').hide(); 
-        this.activePhrase = new Phrase(game.getRandomPhrase().phrase); 
+        const game = new Game(); 
+        const phrase = new Phrase(this.getRandomPhrase().phrase); 
+        this.activePhrase = phrase; 
         this.activePhrase.addPhraseToDisplay();
-        console.log('testing the startGame method')
-        console.log(`Phrase is: ${this.activePhrase.phrase}`)
+
+        // test code to check the phrase formatting
+        console.log(this.activePhrase) 
+
     }
 
     handleInteraction() {
