@@ -26,23 +26,23 @@
 //     logPhrase(game.getRandomPhrase());
 //     logPhrase(game.getRandomPhrase());
 
-const game = new Game();
-const randomPhrase = game.getRandomPhrase();
-const phrase = new Phrase(randomPhrase.phrase);
-phrase.addPhraseToDisplay();
-
 // const game = new Game();
-// game.startGame();
-// console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
+// const randomPhrase = game.getRandomPhrase();
+// const phrase = new Phrase(randomPhrase.phrase);
+// phrase.addPhraseToDisplay();
+// console.log(phrase)
+
+const game = new Game();
+game.startGame();
+console.log(`Active Phrase - phrase: ${game.activePhrase.phrase}`);
 
 
-// var game; 
 //     $('#btn__reset').click(function(){
-//     game = new Game()
+//     const game = new Game(); 
 //     game.startGame();
-//     console.log('testing the button', game.getRandomPhrase());
 
 // });
+
 
 // var chosenLetter; 
 // var letter; 
